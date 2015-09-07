@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/ln_profile_session"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_avatar_default" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            >
+
+            <EditText
+                android:id="@+id/edt_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Firstname"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edt_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/edt_firstname"
+                android:hint="Lastname"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/iv_birthday"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/edt_birthday"
+                android:layout_below="@id/edt_firstname"
+                android:src="@drawable/ic_birthday" />
+
+            <EditText
+                android:id="@id/edt_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_firstname"
+                android:layout_toRightOf="@id/iv_birthday"
+                android:layout_marginLeft="5dp"
+                android:hint="yyyy-mm-dd"
+                android:inputType="date"
+                android:minWidth="100sp" />
+
+            <Spinner
+                android:id="@+id/spn_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/edt_birthday"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/edt_firstname" />
+
+
+            <ImageView
+                android:id="@+id/iv_residence"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/spn_residence"
+                android:layout_below="@id/edt_birthday"
+                android:src="@drawable/ic_city" />
+
+            <Spinner
+                android:id="@+id/spn_residence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/edt_birthday"
+                android:layout_below="@id/edt_birthday" />
+
+            <ImageView
+                android:id="@+id/iv_homephone"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/edt_homephone"
+                android:layout_below="@id/spn_residence"
+                android:src="@drawable/ic_phone_home" />
+
+            <EditText
+                android:id="@id/edt_homephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spn_residence"
+                android:layout_toRightOf="@id/iv_homephone"
+                android:layout_alignLeft="@id/edt_birthday"
+                android:hint="Home phone"
+                android:inputType="phone"
+                android:minWidth="100sp" />
+
+            <ImageView
+                android:id="@+id/iv_mobilephone"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/edt_mobilephone"
+                android:layout_below="@id/edt_homephone"
+                android:src="@drawable/ic_phone_mobile" />
+
+            <EditText
+                android:id="@id/edt_mobilephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_homephone"
+                android:layout_toRightOf="@id/iv_mobilephone"
+                android:layout_alignLeft="@id/edt_birthday"
+                android:hint="Mobile phone"
+                android:inputType="phone"
+                android:minWidth="100sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:minWidth="150dp"
+        android:text="@string/btn_submit_txt" />
+
+    <TextView
+        android:id="@+id/tv_inform_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:maxWidth="320dp"
+        android:paddingTop="10dp"
+        />
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/logo_mobisci" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo_techlooper"/>
+
+        <EditText
+            android:id="@+id/edt_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Keyworks"
+            android:minWidth="220dp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="220dp">
+
+            <EditText
+                android:id="@+id/edt_categories"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Categories"
+                android:maxLines="1" />
+
+            <ImageButton
+                android:id="@+id/btn_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/dropdown_ic_arrow_normal_holo_light" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="220dp">
+
+            <EditText
+                android:id="@+id/edt_locations"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Locations"
+                android:maxLines="1" />
+
+            <ImageButton
+                android:id="@+id/btn_locations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/dropdown_ic_arrow_normal_holo_light" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="220dp">
+
+            <EditText
+                android:id="@+id/edt_levels"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Levels"
+                android:maxLines="1" />
+
+            <ImageButton
+                android:id="@+id/btn_levels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/dropdown_ic_arrow_normal_holo_light" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edt_min_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mininum Salary (USD)"
+            android:inputType="number"
+            android:minWidth="220dp" />
+
+        <EditText
+            android:id="@+id/edt_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Frequency (weekly)"
+            android:inputType="number"
+            android:minWidth="220dp" />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="150dp"
+            android:text="@string/btn_subscribe_txt" />
+
+        <TextView
+            android:id="@+id/tv_inform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="320dp"
+            android:paddingTop="10dp"
+             />
+    </LinearLayout>
+</RelativeLayout>
